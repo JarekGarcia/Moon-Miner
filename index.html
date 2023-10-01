@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon-Miner</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <section class="row">
+            <div class="col-12">
+                <h1 class="text-center text-white fw-bold mt-5 mb-5 moon-miner">MOON MINER</h1>
+            </div>
+        </section>
+    </header>
+
+    <main class="container-fluid">
+        <section class="row justify-content-center">
+            <div class="col-6 d-flex justify-content-center">
+                <img onclick="mine()" role="button" class="moon-img"
+                    src="https://freepngimg.com/thumb/universe/33028-6-moon-transparent-background.png" alt="">
+            </div>
+
+
+    </main>
+
+    <footer class="container-fluid">
+        <section class="row justify-content-center text-center mt-5">
+
+            <div class="col-2 fs-3 dark-green-bg d-flex justify-content-around align-items-center">
+                <p>+ <span id="totalclickpower">1</span></p>
+                <p class="mdi mdi-cursor-pointer"></p>
+            </div>
+            <div class="col-4 light-green-bg">
+                <p class="mdi mdi-alien fs-1"> <span id="aliens">0</span></p>
+            </div>
+            <div class="col-2 dark-green-bg fs-3 d-flex justify-content-around align-items-center">
+                <p>+ <span id="totalautopower">0</span></p>
+                <p class="mdi mdi-clock"></p>
+            </div>
+
+
+        </section>
+
+        <section class="row light-green-bg">
+
+            <div class="col-6 light-green-bg">
+                <div class="row">
+                    <div class="col-6 dark-green-bg text-center">
+                        <p class="fw-bold text-white">CLICK UPGRADES</p>
+                        <div class="d-flex justify-content-evenly align-items-center">
+
+                            <p onclick="buyLightSaber()" class="btn btn bg-primary fs-3" role="button"> <span
+                                    id="lightsaberprice">50</span><i class="mdi mdi-alien"></i></p>
+                            <p class="fw-bold">+1 Light Saber</p>
+
+                        </div>
+                        <div class="d-flex justify-content-evenly align-items-center">
+
+                            <p onclick="buyRayGun()" class="btn btn bg-primary fs-3" role="button"> <span
+                                    id="raygunprice">500</span><i class="mdi mdi-alien"></i></p>
+                            <p class="fw-bold">+1 Ray Gun</p>
+
+                        </div>
+                    </div>
+                    <div class="col-6 dark-green-bg text-center">
+                        <p class="fw-bold text-white">AUTO UPGRADES</p>
+
+                        <div class="d-flex justify-content-evenly align-items-center">
+
+                            <p onclick="buyAlienFarm()" class="btn btn bg-primary fs-3" role="button"> <span
+                                    id="alienfarmprice">1000</span><span class="mdi mdi-alien"></span></p>
+                            <p class="fw-bold">+1 Alien Farm</p>
+
+                        </div>
+
+                        <div class="d-flex justify-content-evenly align-items-center">
+
+                            <p onclick="buyAlienFactory()" class="btn btn bg-primary fs-3" role="button"> <span
+                                    id="alienfactoryprice">5000</span><span class="mdi mdi-alien"></span></p>
+                            <p class="fw-bold">+1 Alien Factory</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 dark-green-bg">
+                <div class="row">
+
+                    <div class="col-6 text-center">
+                        <p class="fw-bold text-white">CLICK STATS</p>
+                        <div class="d-flex text-center justify-content-center">
+                            <p class="text-white fw-bold"><span id="saberquantity">1</span></p>
+                            <p class="text-white fw-bold"> : Light Saber +</p>
+                            <p class="text-white fw-bold"><span class="" id="lightsaber">1</span></p>
+                        </div>
+
+                        <div class="d-flex text-center justify-content-center">
+
+                            <p class="fw-bold text-white"> <span id="raygunquantity">0</span></p>
+                            <p class="fw-bold text-white">: Ray Gun +</p>
+                            <p class="fw-bold text-white"> <span class="" id="raygun">0</span></p>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-6 text-center">
+                        <p class="fw-bold text-white">AUTO STATS</p>
+
+                        <div class="d-flex text-center justify-content-center">
+                            <p class="text-white fw-bold"> <span id="farmquantity">0</span></pc>
+                            <p class="text-white fw-bold">: Alien Farm + <span class="" id="alienfarm">0</span></p>
+
+
+                        </div>
+                        <div class="d-flex text-center justify-content-center">
+                            <p class="text-white fw-bold"> <span id="factoryquantity">0</span></pc>
+                            <p class="text-white fw-bold">: Alien Factory + <span class="" id="alienfactory">0</span>
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

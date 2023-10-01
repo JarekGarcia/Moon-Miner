@@ -1,0 +1,25 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+}
+
+.moon-miner {
+    text-shadow: 0 4px 1px #00ff2f;
+}
+
+.moon-img {
+    height: 50vh;
+    user-select: none;
+}
+
+
+.light-green-bg {
+    background-color: #00ff2f;
+}
+
+.dark-green-bg {
+    background-color: #00b922;
+}
+
+.border {
+    border-radius: 10px;
+}
